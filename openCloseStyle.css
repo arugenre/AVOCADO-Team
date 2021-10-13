@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    text-align: center;
+
+}
+.go{
+    margin: 0;
+    font-size: 110px;
+    text-decoration: none;
+    color: red;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+}
+.main_text{
+    margin: 0;
+    font-size: 100px;
+    text-decoration: none;
+    color: white;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+}
