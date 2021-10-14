@@ -1,27 +1,70 @@
-const startingMinutes = 01;
-let time = startingMinutes * 60;
+function startTimer(duration, display){
+    var timer = duration, minutes, seconds;
+    var end = setInterval(function(){
+        minutes = parseInt(timer/60, 10 )
+        seconds = parseInt(timer % 60,10);
 
-const countdownEL = document.getElementById('countdown');
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
 
-setInterval(updateCountdown, 1000);
+        display.textContent = minutes + ":" + seconds;
 
-function updateCountdown(){
-    const minutes = Math.floor(time/60);
-    let seconds = time % 60;
+        if (--timer < 0) {
+            window.location = "http://127.0.0.1:5501/gameOver.html";
+            clearInterval(end);
+        }
 
-    seconds = seconds < 10 ? '0' + seconds : seconds;
-
-    countdownEL.innerHTML = ` ${minutes}:${seconds} `;
-    time--;
+    },1000);
 }
 
-document.getElementById('string_inner_container').innerHTML = create_random_string(8)
+window.onload = function () {
+    var fiveMinutes = 600,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
 
-function create_random_string(string_length){
-    var random_string = ' ';
+document.getElementById('string_inner_container').innerHTML = create_random_string1()
+
+
+function create_random_string1(){
+    var random_string = 'BROWSER';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    for(var i = 0; i < string_length; i++ ){
+    for(var i = 0; i < 12; i++ ){
         random_string += characters.charAt(Math.floor(Math.random() * characters.length))
     }
+    random_string = shuffleString(random_string);
 return random_string;
+}
+function create_random_string2(){
+    var random_string = 'ZOMBIE';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    for(var i = 0; i < 12; i++ ){
+        random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+    }
+    random_string = shuffleString(random_string);
+
+return random_string;
+}
+function create_random_string3(){
+    var random_string = 'CROWN';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    for(var i = 0; i < 12; i++ ){
+        random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+    }
+    random_string = shuffleString(random_string);
+return random_string;
+}
+
+
+function shuffleString(s){
+    var arr = s.split('');           // Convert String to array
+    var n = s.length;
+    for(var i = 0; i<n; i++){
+        var j = Math.floor(Math.random()*n);
+        var temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    s = arr.join('');
+    return s;
 }

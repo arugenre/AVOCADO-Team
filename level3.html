@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="levelStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <title>Level 3</title>
 </head>
 <body>
-    <h1>Four Pics One Word</h1>
-    <p id="countdown">
-        10:00
-    </p>
-    <div class="images">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Heraldic_Royal_Crown_of_Spain.svg/2560px-Heraldic_Royal_Crown_of_Spain.svg.png" alt="" width="248">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7m9-9ND9ytP0QYFOQO91tWuwPIe_TtiiIQg&usqp=CAU" alt="" width="248">
-        <img src="https://www.tripsavvy.com/thmb/cf2CBDSiWfxqnfezG2lBI3J4H80=/2304x2304/smart/filters:no_upscale()/GettyImages-674747585-5b0ec5103037130037349c14.jpg" alt="" width="248">
-        <img src="https://media.istockphoto.com/vectors/crown-of-thorns-easter-religious-symbol-of-christianity-hand-drawn-vector-id912479176?k=20&m=912479176&s=612x612&w=0&h=JPBrLx_EjzNRgb-0Jfwbtwgjxgl5ag_L-j5zIOTWIzE=" alt="" width="248">
-
+    <h1 class="main">Four Pics One Word</h1>
+    
+    <div class="timer"><span id="time">01:00</span>
     </div>
+    
+    <div class="images">
+        <div class="images1">
+            <img class="im_bw" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Heraldic_Royal_Crown_of_Spain.svg/2560px-Heraldic_Royal_Crown_of_Spain.svg.png" alt="" >
+            <img class="im_bw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7m9-9ND9ytP0QYFOQO91tWuwPIe_TtiiIQg&usqp=CAU" alt="">
+        </div>
+        <div class="images2">
+            <img class="im_bw" src="https://www.tripsavvy.com/thmb/cf2CBDSiWfxqnfezG2lBI3J4H80=/2304x2304/smart/filters:no_upscale()/GettyImages-674747585-5b0ec5103037130037349c14.jpg" alt="">
+            <img class="im_bw" src="https://media.istockphoto.com/vectors/crown-of-thorns-easter-religious-symbol-of-christianity-hand-drawn-vector-id912479176?k=20&m=912479176&s=612x612&w=0&h=JPBrLx_EjzNRgb-0Jfwbtwgjxgl5ag_L-j5zIOTWIzE=" alt="">
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:75%"></div>
+      </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>
