@@ -14,11 +14,16 @@ body{
 .timer{
     display: inline-block;
     margin-top: 0px;
+<<<<<<< HEAD
     margin-left: 87%;
+=======
+    margin-left: 90%;
+>>>>>>> 5307f24726c39b4640193b411d43b2ee956c9caf
     margin-bottom: 0;
     font-size:300%;
 }
 .images{
+<<<<<<< HEAD
     display: inline-block;
     margin-left: 15%;
 }
@@ -62,4 +67,12 @@ body{
         font-size: 154%;
     }
     
+=======
+    margin-left: 38%;
+>>>>>>> 5307f24726c39b4640193b411d43b2ee956c9caf
 }
+
+
+/**
+Hello
+*/
