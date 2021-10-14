@@ -11,10 +11,15 @@ body{
 .timer{
     display: inline-block;
     margin-top: 0px;
-    margin-left: 1270px;
+    margin-left: 90%;
     margin-bottom: 0;
     font-size: 50px;
 }
 .images{
-    margin-left: 580px;
+    margin-left: 38%;
 }
+
+
+/**
+Hello
+*/
