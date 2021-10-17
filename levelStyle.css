@@ -4,19 +4,64 @@ body{
     color: white; */
 }
 .main{
-    font-size: 70px;
+    font-size: 500%;
     text-align: center;
     margin: 0;
+}
+.glyphicon{
+    width: 100px;
 }
 .timer{
     display: inline-block;
     margin-top: 0px;
-    margin-left: 90%;
+    margin-left: 87%;
     margin-bottom: 0;
-    font-size: 50px;
+    font-size:300%;
 }
 .images{
-    margin-left: 38%;
+    display: inline-block;
+    margin-left: 15%;
+}
+.im_bw{
+    width: 200px;
+    height: 200px;
+}
+.letters{
+    display:inline-block;
+    vertical-align: baseline;
+    margin-left: 15%;
+    border: 1px solid red;
+    font-size: 200%;
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        font-size: 400%;
+        text-align: center;
+        margin: 0;
+    }
+    .timer{
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: 74%;
+        margin-bottom: 0;
+        font-size: 150%;
+    }
+    .images{
+        display: inline-block;
+        margin-top: 15%;
+        margin-left: 9%;
+    }
+    .im_bw{
+        width: 150px;
+        height: 150px;
+    }
+    .letters{  
+        margin:5%; 
+        border: 1px solid red;
+        font-size: 154%;
+    }
+    
 }
 #blanks .blank {
 

@@ -26,7 +26,8 @@ function startTimer(duration, display) {
             window.location = "gameover.html";
             clearInterval(end);
         }
-    }, 1000);
+
+    },1000);
 }
 
 window.onload = function main() {
@@ -38,6 +39,7 @@ window.onload = function main() {
 
 
 };
+<<<<<<< HEAD
 //check answer
 function getSubmission(){
     var x = "";
@@ -79,6 +81,10 @@ function deselect(i){
     $(".letter")[index].style.background = "white";
     $(".blank").css("color", "black");
     updateAnswer();
+=======
+
+document.getElementById('string_inner_container').innerHTML = create_random_string1();
+>>>>>>> 55c2c74b6562953f40e79cc5614469214cda224f
 
 }
 

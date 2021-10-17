@@ -5,7 +5,7 @@ body{
 }
 .go{
     margin: 0;
-    font-size: 110px;
+    font-size:620%;
     text-decoration: none;
     color: red;
     font-family: 'ZCOOL KuaiLe', cursive;
@@ -13,9 +13,32 @@ body{
 }
 .main_text{
     margin: 0;
-    font-size: 100px;
+    font-size: 620%;
     text-decoration: none;
     color: white;
     font-family: 'ZCOOL KuaiLe', cursive;
     text-align: center;
+}
+.pixel{
+    width:30%;
+}
+@media only screen and (max-width: 600px){
+    .go{
+        margin: 0;
+        font-size: 420%;
+        text-decoration: none;
+        color: red;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        text-align: center;
+    }
+    .main_text{
+        font-size: 280%;
+        color: white;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        text-align: center;
+    }
+    .pixel{
+        width: 70%;
+        margin-top: 24%;
+    }
 }
