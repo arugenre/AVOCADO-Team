@@ -15,11 +15,20 @@ var options = {
 var blanks = {} 
 var letters = {} 
 
-function main() {
+function main(level) {
+	if(currentlevel==2){
+		window.location="level2.html";
+	}
+	if(currentlevel==3){
+		window.location="level3.html";
+	}
+	currentlevel = level;
+	tempanswer = leveltoanswers[currentlevel];
 	var fiveMinutes = 60,     
 		display = document.querySelector('#time');
 	startTimer(fiveMinutes, display);
 	addblanks(currentlevel); 
+	console.log(currentlevel+" "+ tempanswer)
 	addoptions(currentlevel); 
 }
 function startTimer(duration, display) {
@@ -32,7 +41,9 @@ function startTimer(duration, display) {
 		seconds = seconds < 10 ? "0" + seconds : seconds; // 10:01
 
 		display.textContent = minutes + ":" + seconds;
-
+		if(timer<11){
+			$(".timer").css("color","red");
+		}
 		if (--timer < 0) {
 			window.location = "gameover.html";
 			clearInterval(end);
@@ -182,15 +193,8 @@ function checkifcorrect(level) {
 function nextmove() {
 	if (checkifcorrect(currentlevel)) {
 		if (currentlevel === nooflevels) {
-			window.location = "congrats.html";
+			window.location = "youWin.html";
 		}
-		else if(currentlevel == 1){
-			window.location = "level2.html";
-		}
-		else if(currentlevel == 2){
-			window.location = "level3.html";
-		}
-				
 		currentlevel++;
 		tempanswer = leveltoanswers[currentlevel];
 
