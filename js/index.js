@@ -16,10 +16,30 @@ var blanks = {}
 var letters = {} 
 
 function main() {
+	var fiveMinutes = 60,     
+		display = document.querySelector('#time');
+	startTimer(fiveMinutes, display);
 	addblanks(currentlevel); 
 	addoptions(currentlevel); 
 }
+function startTimer(duration, display) {
+	var timer = duration, minutes, seconds;
+	var end =setInterval(function () {
+		minutes = parseInt(timer / 60, 10)
+		seconds = parseInt(timer % 60, 10);
 
+		minutes = minutes < 10 ? "0" + minutes : minutes; //03:43
+		seconds = seconds < 10 ? "0" + seconds : seconds; // 10:01
+
+		display.textContent = minutes + ":" + seconds;
+
+		if (--timer < 0) {
+			window.location = "gameover.html";
+			clearInterval(end);
+		}
+
+	},1000);
+}
 function create_random_string(level){
     var random_string = leveltoanswers[level]; 
     var n = random_string.length;
