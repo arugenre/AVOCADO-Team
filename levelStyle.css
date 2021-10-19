@@ -1,78 +1,52 @@
 body{
-    /* font-family: 'ZCOOL KuaiLe', cursive; */
-    /* background-color: black;
-    color: white; */
+    font-family: 'IM Fell English SC', serif;
+    text-align: center;
+    color: white;
+    background-image: url(https://media.giphy.com/media/CGZGV8wix4lvJn3dxy/giphy.gif);
+}
+.container{
+    background-color: rgb(24, 25, 26);
+    width: 80%;
 }
 .main{
     font-size: 500%;
     text-align: center;
     margin: 0;
 }
-.glyphicon{
-    width: 100px;
-}
 .timer{
     display: inline-block;
     margin-top: 0px;
     margin-left: 87%;
     margin-bottom: 0;
-    font-size:300%;
+    font-size:250%;
 }
 .images{
     display: inline-block;
-    margin-left: 15%;
+    text-align: center;
 }
 .im_bw{
-    width: 200px;
-    height: 200px;
-}
-.letters{
-    display:inline-block;
-    vertical-align: baseline;
-    margin-left: 15%;
-    border: 1px solid red;
-    font-size: 200%;
+    display: inline-block;
+    width: 15%;
+    height: 15%;
 }
 
-@media only screen and (max-width: 600px){
-    .main{
-        font-size: 400%;
-        text-align: center;
-        margin: 0;
-    }
-    .timer{
-        display: inline-block;
-        margin-top: 0px;
-        margin-left: 74%;
-        margin-bottom: 0;
-        font-size: 150%;
-    }
-    .images{
-        display: inline-block;
-        margin-top: 15%;
-        margin-left: 9%;
-    }
-    .im_bw{
-        width: 150px;
-        height: 150px;
-    }
-    .letters{  
-        margin:5%; 
-        border: 1px solid red;
-        font-size: 154%;
-    }
-    
+.input{
+    display: inline;
+    text-align:center;
 }
+
 #blanks .blank {
-
     font-size: 200%;
+    margin-top: 2%;
     border: 1px solid black;
     display: inline-block;
     width: 4%;
     height: 4%;
     background-color: brown;
 }
-
+#letters{
+    margin-top: 1%;
+}
 #letters .letter {
     font-size: 200%;
     border: 1px solid black;
@@ -89,6 +63,49 @@ body{
 #letters .letter ::selection{
     background-color: green;
 }
-/**
-Hello
-*/
+
+@media screen and (max-width: 600px){
+    .main{
+        font-size: 400%;
+        text-align: center;
+        margin: 0;
+    }
+    .timer{
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: 74%;
+        margin-bottom: 0;
+        font-size: 150%;
+    }
+    .images{
+        display: inline-block;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .im_bw{
+        width:40%;
+    }
+    .input{
+        display: inline;
+        text-align:center;
+    }
+    #blanks .blank {
+        font-size: 200%;
+        margin-top: 7%;
+        border: 1px solid black;
+        display: inline-block;
+        width: 11%;
+        height: 4%;
+        background-color: brown;
+    }
+    #letters{
+        margin-top: 5%;
+    }
+    #letters .letter {
+        font-size: 200%;
+        border: 1px solid black;
+        display: inline-block;
+        width: 11%;
+        height: 4%;   
+    }   
+}

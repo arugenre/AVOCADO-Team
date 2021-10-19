@@ -1,40 +1,71 @@
 body{
+    font-family: 'IM Fell English SC', serif;
+    color: white;
     background-color: black;
-    text-align: center;
-
+    text-align:center ;
 }
 .go{
     margin: 0;
     font-size:620%;
     text-decoration: none;
     color: red;
-    font-family: 'ZCOOL KuaiLe', cursive;
-    text-align: center;
+    font-family: 'IM Fell English SC', serif;
 }
-.main_text{
-    margin: 0;
-    font-size: 620%;
+.main_text1{
+    font-size: 540%;
     text-decoration: none;
     color: white;
-    font-family: 'ZCOOL KuaiLe', cursive;
-    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+    border: 4px groove white;
+    border-radius: 2%;
+    padding: 2%;
+}
+.main_text2{
+    font-size: 540%;
+    text-decoration: none;
+    color: white;
+    font-family: 'IM Fell English SC', serif;
+    padding: 0%;
+    margin: 0;
+}
+.btnInstr{
+    color: black;
+    margin: 0;
+    font-size: 150%;
+    text-decoration: none;
+    font-family: 'IM Fell English SC', serif;    
+}
+.openD{
+    margin-bottom: 5%;
 }
 .pixel{
-    width:30%;
+    margin-top: 7%;
+    width:25%;
 }
-@media only screen and (max-width: 600px){
+@media (max-width: 800px ){
+    .pixel{
+        margin-top: 4%;
+        width:20%;
+    }
     .go{
         margin: 0;
         font-size: 420%;
         text-decoration: none;
         color: red;
-        font-family: 'ZCOOL KuaiLe', cursive;
+        font-family: 'IM Fell English SC', serif;
         text-align: center;
     }
-    .main_text{
-        font-size: 280%;
+    .main_text1{
+        font-size: 480%;
         color: white;
-        font-family: 'ZCOOL KuaiLe', cursive;
+        font-family: 'IM Fell English SC', serif;
+        text-align: center;
+        border: 0px;
+    }
+    .main_text2{
+        font-size: 300%;
+        color: white;
+        font-family: 'IM Fell English SC', serif;
         text-align: center;
     }
     .pixel{

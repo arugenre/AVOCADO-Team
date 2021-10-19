@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="levelStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main">Four Pics One Word</h1>
+    
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:60%"></div>
+        </div>
+    
+        <div class="timer"><span id="time">01:00</span>
+        </div>
+        
+        <div class="images">
+        <div class="images1">
+            <img class="im_bw" src="https://media.istockphoto.com/vectors/carnival-pirate-mask-funny-sea-pirates-hats-journey-bandana-with-vector-id1055182858?k=20&m=1055182858&s=612x612&w=0&h=IeRebS4ncLyL1PF6J1herMEPcNZCu8ZmrphR6_c7PL4=" alt=""  >
+            <img class="im_bw" src="https://www.thefairygarden.co.uk/wp-content/uploads/2018/08/6wm299.jpg" alt=""  >
+        </div>
+        <div class="images2">
+            <img class="im_bw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4U28ZF8HOEEoSj26N6l17-QQsZv3TqIwz8Q&usqp=CAU" alt="" >
+            <img class="im_bw" src="https://media.istockphoto.com/vectors/ship-steering-wheel-vector-id187714334?k=20&m=187714334&s=612x612&w=0&h=X5jA9kv1FNXAkOXdvWLuHhTdI042eNQOzD9itFBbWfA=" alt="" >
+    
+        </div>
+        </div>
+    
+        <div class="input">
+            <div id = "blanks" ></div>
+            <div id = "letters"></div>
+        </div>
+       
+    
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src = "js/index.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                main(4);
+            })
+        </script>
+</body>
+</html>
