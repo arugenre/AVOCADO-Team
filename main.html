@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainStyle.css">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@100;300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body onload="load()">
+    <div class="log">
+        <h2>GamePlay</h2>
+    </div>
+    <div id="nav-container">
+        <div id="nav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#games" class="nav-link">Games</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+      
+      <section id="home"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-easing="ease-out-sine"
+        data-aos-mirror="true"
+      >
+        <img class="rotate" src="https://techietechniques.com/wp-content/uploads/2019/10/Ellipse-1.svg" alt="">
+        <div class="aboutTitle" id="aboutTitle">
+            <h1 style="font-size:200%; font-weight: 500;">Made to be played</h1>
+            <h2 style="font-size: 400%; font-weight: 700;">
+                We're creating the best in interactive entertainment by making games that change the way people have fun.</h2>
+        </div>
+
+        <div class="btns">
+            <a class="download" href="https://www.apple.com/ru/app-store/"><img src="https://icon-library.com/images/google-play-store-icon-download/google-play-store-icon-download-5.jpg" alt="" ></a>
+            <a class="download" href="https://play.google.com/store?hl=ru"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1024px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+        </div>
+        
+        <img class="rotate2" src="https://assets-global.website-files.com/5b5affb9e054d23e31dada55/5bc5a61e62d140cc4206653a_create-2-1%402x.png" alt="">
+        <img class="dragon" id="dragon" src="imgs/—Pngtree—cute game characters dragon_6411234.png" alt="dragon2">
+
+      </section>
+
+      <section id="games">
+          <img class="rocket1" src="imgs/—Pngtree—hand drawn cartoon rocket decoration_4369500.png" alt="">
+          <img class="rocket2" src="imgs/—Pngtree—hand drawn cartoon rocket decoration_4369500.png" alt="">
+          <img class="dragon2" id="dragon2" src="imgs/—Pngtree—cute game characters dragon green_6411235.png" alt="">
+
+          <div class="wrapper">
+                <div class="parent">
+                    <div class="child bg-one">
+                        <a class="grads" href="firstgame/opening.html">4 pics 1 word</a>
+                    </div>
+                </div>
+
+                <div class="parent">
+                    <div class="child bg-two">
+                        <a class="grads" href="#">Tic Tac Toe</a>
+                    </div>
+                </div>
+            
+                <div class="parent">
+                    <div class="child bg-three">
+                        <a class="grads" href="#">Crossword</a>
+                    </div>
+                </div>
+        </div>
+      </section>
+      <section id="about">
+        <img class="rotate3" src="https://assets-global.website-files.com/5b5affb9e054d23e31dada55/5bc5a61e62d140cc4206653a_create-2-1%402x.png" alt="">
+        
+        <div class="aboutGames" 
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+        >
+          <div class="aboutG1">
+                <img class="infoPic" src="https://play-lh.googleusercontent.com/fNQtjSnaMmu-crelB0cvSyweR_eudexCuAVbnwTxdsOSF5NArBIDjTa1T-Rz-mGLo5U" alt="">
+                <div class="about_text">
+                    <h3>4 pics 1 word</h3>
+                    <br>
+                    <p>4 Pics 1 Word (Free) is a word guessing game. It presents you with four pictures and then tasks you with guessing what specific word fits with the theme of the photos presented. It’s a simple game that really seems to be clicking with people if the App Store charts are any indication.</p>
+                </div>
+          </div>
+
+          <div class="aboutG2">
+            <div class="about_text">
+                <h3>Tic Tac Toe</h3>
+                <br>
+                <p>Tic-tac-toe is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming best play from both players.</p>
+            </div>
+            <img class="infoPic" src="https://miro.medium.com/max/300/1*kdY26OPGZbeNKJs60q0zUg.png" alt="">
+        </div>
+
+        <div class="aboutG3">
+            <img class="infoPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/CrosswordUSA.svg/1200px-CrosswordUSA.svg.png" alt="">
+            <div class="about_text">
+                <h3>About game</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, omnis ducimus aut nostrum, dolorum et quae mollitia sit temporibus eligendi corporis doloribus dolores laborum atque laudantium, sint deleniti vel repudiandae.</p>
+            </div>
+        </div>
+        </div>
+
+        <img class="rotate4" src="https://techietechniques.com/wp-content/uploads/2019/10/Ellipse-1.svg" alt="">
+
+      </section>
+      
+      <section id="contact" style="height: 200vh;">
+          <div class="parallax1">
+              <div class="mask">
+                <div class="joinInfo"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-mirror="true"
+                >
+                    <p style="font-size: 50%; font-weight: 600">Join our team</p>
+                    <p style="font-size: 70%; font-weight: 500; width: 80%;">If you’re interested in joining us here to help nonprofits better use the web, please let us know. When we say “we’ll keep your information on file,” we really mean it.</p>
+                    <a href="#" class="btn btn-warning btn-lg">Link Button</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="parallax2">
+            <div class="mask">
+          </div>
+          </div>
+
+           <div class="inputFields"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-mirror="true"
+           >
+                <h1 style="font-size: 250%; font-weight: 600;">Get in touch</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+                <div class="field">
+                        <input class="input" style="width: 40%; margin: 10% 10% 10% 0;" type="text" placeholder="First Name">
+                        <input class="input" style="width: 40%; margin: 10% 0 10% 0;" type="text" placeholder="Last Name">
+                        <input class="input" style="width: 92%; margin-bottom: 10%;" type="email" placeholder="Email">
+                        <div class="control">
+                            <textarea class="textarea is-hovered" placeholder="Leave us a message" name="" id="" cols="10" rows="5"></textarea>
+                        </div>
+                        <button class="button is-hovered is-fullwidth" style=" width: 92%; margin-top: 10%;">Submit</button>
+                </div>
+            </div>
+          <div class="subscribe"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            >
+            <h1 style="font-size: 150%; font-weight: 500; margin-bottom: 10%;">Subscribe to Our Newsletter</h1>
+            <input class="input" style="width: 70%; " type="email" placeholder="Email">
+            <button class="button is-warning">Join</button>
+          </div>
+      
+        </section>
+
+
+      <div class="footerF">
+        <div class="logo">
+            <h2>Game Name</h2>
+        </div>
+        <p style="font-size: 150%;">An Immersive Gaming Experience</p>
+        <footer class="row row-cols-5 py-5 my-5 border-top">
+            <div class="col">
+                <h5 class="footHead">Contact</h5>
+                <ul>
+                    <li class="footBody">Info@mysite.com</li>
+                    <li class="footBody">Tel: 123-456-7890</li>
+                    <li class="footBody">Kaskelen, Abylai Khana 1/1, 040900</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 class="footHead">Navigation</h5>
+                <ul>
+                    <li class="footBody"><a href="#games">Games</a></li>
+                    <li class="footBody"><a href="#about">About</a></li>
+                    <li class="footBody"><a href="#contact">Contact</a></li>
+                    <li class="footBody"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Privacy Policy 
+                    </button></li>
+                </ul>
+            </div>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Modal body..
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+              
+            <div class="col">
+                <h5 class="footHead">Social</h5>
+                <ul>
+                    <li class="footBody"><a href="https://discord.com/">Discord</a></li>
+                    <li class="footBody"><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li class="footBody"><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+                    <li class="footBody"><a href="https://ru.linkedin.com/">Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 class="footHead">Find us on</h5>
+                <ul >
+                    <li><a class="download" style="width: 50%;" href="https://www.apple.com/ru/app-store/"><img src="https://icon-library.com/images/google-play-store-icon-download/google-play-store-icon-download-5.jpg" alt="" ></a></li>
+                    <li><a class="download" style="width: 50%;" href="https://play.google.com/store?hl=ru"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1024px-Google_Play_Store_badge_EN.svg.png" alt=""></a></li>
+                </ul>
+            </div>
+
+        </footer>
+        <p style="padding: 2%;" class="border-top">©2021 by gamename. Proudly created for finalProject</p>
+      </div>
+      
+
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    <script src="mainScript.js"></script>
+</body>
+</html>

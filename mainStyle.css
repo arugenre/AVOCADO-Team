@@ -1,0 +1,407 @@
+
+  *{
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cabin', sans-serif;
+
+  }
+  .log{
+    position: fixed;
+    width: 10%;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 0 0 40px 40px ;
+    height: 5em;
+    z-index: 10;
+    margin-left: 5em;
+    text-align: center;
+  }
+  #nav-container{
+    position: fixed;
+    width: 60%;
+    margin-left: 35em;
+    padding: 1em 0;
+    background-color: #fff;
+    border-radius: 0 0 40px 40px ;
+    z-index: 10;
+  }
+  
+  #nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 3em;
+    line-height: 3em;
+  }
+  
+  a:link, a:visited, a:active{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #000;  
+  }
+  
+  a:hover{
+    color: #85D6CB;
+  }
+  
+  .nav-link{
+    padding: 0 1em;
+    margin: 0 3em;
+    border-radius: 2em;
+    transition: all .4s;
+  }
+  
+  a.active{
+    color: #fff;
+  }
+  
+  a.nav-link.active:hover{
+    padding: 0 4em;
+    margin: 0;
+  }
+  
+  section{
+    height: 100vh;
+  }
+  
+  #home, a.active[href="#home"]{
+    background-color: #eee5e4 ;
+  } 
+  #games, a.active[href="#games"]{
+    background-image: url(imgs/—Pngtree—vector\ little\ prince\ illustration_2858626.png);
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, hsla(235, 85%, 24%, 1) 0%, hsla(268, 41%, 44%, 1) 46%, hsla(319, 67%, 76%, 1) 100%);;
+    background-size: cover;
+  
+  }
+  
+  #about, a.active[href="#about"]{
+    background-color: #eee5e4;
+  }
+  
+  #contact, a.active[href="#contact"]{
+    background-color:#bf9698;
+  }
+ 
+.download{
+  width: 11%;
+  display: inline-block;
+  margin: 5% 3%;
+}
+
+.wrapper {
+  padding: 5px 50px;
+  max-width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 5;
+  bottom: 90%;
+}
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+  width: 33%;
+  height: 350px;
+  border: 1px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+cursor: pointer;
+border-radius: 15%;
+}
+.child{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.bg-one{
+  background-image: url(https://play-lh.googleusercontent.com/fNQtjSnaMmu-crelB0cvSyweR_eudexCuAVbnwTxdsOSF5NArBIDjTa1T-Rz-mGLo5U);
+}
+.bg-two{
+  background-image: url(https://miro.medium.com/max/300/1*kdY26OPGZbeNKJs60q0zUg.png);
+}
+.bg-three{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/CrosswordUSA.svg/1200px-CrosswordUSA.svg.png);
+}
+.grads {
+  display: none;
+  font-size: 35px;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  /*text-decoration: none;*/
+}
+
+.parent:hover .child, .parent:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+  display: block;
+}
+
+.parent:hover a, .parent:focus a {
+  display: block;
+}
+
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, hsla(0, 76%, 45%, 1) 0%, hsla(0, 67%, 76%, 1) 100%);
+  opacity: 0.9;
+}
+
+.dragon2{
+  width: 18%;
+  z-index: 9;
+  position: relative;
+  bottom: 18%;
+}
+.rocket1{
+  width: 25%;
+  transform: rotate(5deg);
+  opacity: 0.9;
+  position: relative;
+  left: 70%;
+}
+.rocket2{
+  width: 15%;
+  transform: rotate(5deg);
+  position: relative;
+  bottom: 40% ;
+  left: 88%;
+  opacity: 0.8;
+}
+
+.infoPic{
+  width: 13%;
+  display: block;
+  padding: 1%;
+}
+.aboutGames{
+  position: relative;
+  bottom: 140%;
+  left: 5%;
+}
+.aboutG1, .aboutG2, .aboutG3{
+  display: flex;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 1%;
+  position: relative;
+  bottom: 100%;
+  margin-left: 6%;
+  z-index: 10;
+}
+.aboutG2{
+  position: relative;
+  left: 30%;
+  margin: 2%;
+}
+.rotate3{
+  width: 40%;
+  transform: rotate(100deg);
+  position: relative;
+  bottom: 75%;
+  right: 10%;
+}
+.rotate4{
+  position: relative;
+  top: -190%;
+  left: 60%;
+  width: 50%;
+}
+
+
+.parallax1, .parallax2{
+  background-image: url(https://i.pinimg.com/originals/b8/cd/ad/b8cdadb4aefff504359f1df4fc7e7b14.jpg);
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 60px;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* https://livewallpaperhd.com/wallpapers-kid-goku-12964/wallpapers-kid-goku/ */
+}
+.parallax2{
+  background-image: url(https://allmoviesilike.files.wordpress.com/2016/05/99a22-the_little_prince_2015_movie-1920x1080.jpg?w=640&h=360);
+}
+
+.parallax1 .mask, .parallax2 .mask{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 49, 49, 0.6);
+  z-index: 2;
+}
+
+.joinInfo{
+  position: relative;
+  top: 10%;
+  left: 10%;
+  color: rgb(247, 247, 247);
+  
+}
+.inputFields{
+  position: relative;
+  width: 30%;
+  border: 5px solid white;
+  border-radius: 15%;
+  padding: 3%;
+  z-index: 6;
+  left: 10%; 
+  bottom: 60%;
+  background-color: white;
+}
+.control{
+  width: 92%;
+}
+.subscribe{
+  position: relative;
+  width: 25%;
+  padding: 2%;
+  border: 2px solid rgb(247, 52, 52);
+  border-radius: 50px;
+  background-color: rgb(247, 52, 52);
+  color: white;
+  bottom: 72%;
+  left: 45%;
+  z-index: 7;
+}
+.logo{
+  display: block;
+  position: relative;
+  width: 10%;
+  color: white;
+  background-color: rgb(247, 52, 52);
+  border-radius: 0 0 40px 40px ;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  left: 45%;
+  margin: 0;
+  margin-bottom: 2%;
+
+}
+.footHead{
+  font-size: 150%;
+  font-weight: 500;
+  padding: 15%;
+}
+.footBody{
+  padding-bottom: 10%;
+}
+.footerF{
+  position: relative;
+  text-align: center;
+  color: rgb(94, 91, 91);
+  background-color: #f8f1e8;
+  text-decoration: none;
+  padding: 0;
+}
+.row{
+  position: relative;
+  left: 10%;
+}
+
+/* About page css */
+.aboutTitle{
+    position: relative;
+    top: -50%;
+    left: 5%;
+    color: rgb(104, 59, 59);
+    width: 90%;
+    z-index: 5;
+}
+.dragon{
+  width: 30%;
+  position: relative;
+  top: -191%;
+  left: 60%;
+}
+
+.founds{
+  background-color:#ffc8cb;
+}
+.founders{
+  width: 80%;
+  height: 80%;
+  background-color: #bf9698;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  padding-top: 6em;
+  padding-left: 2em;
+}
+.foundPic{
+  width: 100%;
+  border-radius: 40px;
+}
+.foundInfo{
+  display: inline-block;
+  padding: 1em;
+  color: #000;
+  text-align: center;
+  font-size: 150%;
+  padding-top: 5%;
+}
+.rotate{
+  width: 40%;
+  transform: rotate(230deg);
+  position: relative;
+  left: 64%;
+  top: -18%;
+}
+.rotate2{
+  width: 40%;
+  position: relative;
+  top: -115%;
+  left: -6%;
+  transform: rotate(-10deg);
+}
+.btns{
+  position: relative;
+  top: -60%;
+  z-index: 5;
+  margin: 3em;
+}
+
+
