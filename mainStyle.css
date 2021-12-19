@@ -2,7 +2,14 @@
   *{
     box-sizing: border-box;
   }
-  html {
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  html{
     scroll-behavior: smooth;
   }
   
@@ -12,6 +19,8 @@
     font-family: 'Cabin', sans-serif;
 
   }
+
+  
   .log{
     position: fixed;
     width: 10%;
@@ -30,7 +39,7 @@
     padding: 1em 0;
     background-color: #fff;
     border-radius: 0 0 40px 40px ;
-    z-index: 10;
+    z-index: 50;
   }
   
   #nav{
@@ -95,6 +104,18 @@
   display: inline-block;
   margin: 5% 3%;
 }
+.btns{
+  position: relative;
+  top: -60%;
+  z-index: 5;
+  margin: 3em;
+}
+.btns2{
+  position: relative;
+  top: -10%;
+  z-index: 5;
+  margin: 4em
+}
 
 .wrapper {
   padding: 5px 50px;
@@ -117,8 +138,9 @@
   position: relative;
   float: left;
   display: inline-block;
-cursor: pointer;
-border-radius: 15%;
+  cursor: pointer;
+  border-radius: 15%;
+  top:170px;
 }
 .child{
   height: 100%;
@@ -184,12 +206,6 @@ border-radius: 15%;
   opacity: 0.9;
 }
 
-.dragon2{
-  width: 18%;
-  z-index: 9;
-  position: relative;
-  bottom: 18%;
-}
 .rocket1{
   width: 25%;
   transform: rotate(5deg);
@@ -213,7 +229,7 @@ border-radius: 15%;
 }
 .aboutGames{
   position: relative;
-  bottom: 140%;
+  bottom:100%;
   left: 5%;
 }
 .aboutG1, .aboutG2, .aboutG3{
@@ -232,21 +248,25 @@ border-radius: 15%;
   left: 30%;
   margin: 2%;
 }
+.dragon2{
+  width: 18%;
+  z-index: 9;
+  position: relative;
+  bottom: 80%;
+}
 .rotate3{
   width: 40%;
   transform: rotate(100deg);
   position: relative;
-  bottom: 75%;
   right: 10%;
+  bottom: 50%;
 }
 .rotate4{
   position: relative;
-  top: -190%;
+  bottom: 140%;
   left: 60%;
   width: 50%;
 }
-
-
 .parallax1, .parallax2{
   background-image: url(https://i.pinimg.com/originals/b8/cd/ad/b8cdadb4aefff504359f1df4fc7e7b14.jpg);
   height: 100vh;
@@ -342,7 +362,6 @@ border-radius: 15%;
   left: 10%;
 }
 
-/* About page css */
 .aboutTitle{
     position: relative;
     top: -50%;
@@ -356,32 +375,6 @@ border-radius: 15%;
   position: relative;
   top: -191%;
   left: 60%;
-}
-
-.founds{
-  background-color:#ffc8cb;
-}
-.founders{
-  width: 80%;
-  height: 80%;
-  background-color: #bf9698;
-  position: relative;
-  top: 10%;
-  left: 10%;
-  padding-top: 6em;
-  padding-left: 2em;
-}
-.foundPic{
-  width: 100%;
-  border-radius: 40px;
-}
-.foundInfo{
-  display: inline-block;
-  padding: 1em;
-  color: #000;
-  text-align: center;
-  font-size: 150%;
-  padding-top: 5%;
 }
 .rotate{
   width: 40%;
@@ -397,11 +390,240 @@ border-radius: 15%;
   left: -6%;
   transform: rotate(-10deg);
 }
-.btns{
-  position: relative;
-  top: -60%;
-  z-index: 5;
-  margin: 3em;
+.burger_main{
+  display: none;
+}
+.madeTo{
+  font-size:200%;
+   font-weight: 500;
+}
+.weCreate{
+  font-size: 400%;
+   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .header_burger{
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 27px;
+    }
+    .header_burger span{
+        background-color: #c75454;
+        position:absolute;
+        border-radius: 2px;
+        left: 0;
+        top: 12px;
+        width: 100%;
+        height: 3px;
+        z-index: 8;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before,
+    .header_burger:after{
+        content: '';
+        background-color: #c75454;
+        border-radius: 2px;
+        position:absolute;
+        width: 100%;
+        height: 3px;
+        z-index: 8;
+        transition: all 0.3s ease 0s;
+    }
+
+    .active span{
+      background-color: #ffffff;
+        
+    }
+    .active:before,
+    .active:after{
+            content: '';
+            background-color: #ffffff;
+        }
+    .header_burger.active:before{
+        transform: rotate(135deg);
+        top: 8px;
+    }
+    .header_burger.active:after{
+        transform: rotate(-135deg);
+        bottom: 8px;
+    }
+    .header_burger.active span{
+        transform: scale(0);
+    }
+    .header_burger:before{
+        top: 0;
+    }
+    .header_burger:after{
+        bottom: 0;
+    }
+
+    .burger_main a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .burger_main{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        font-size: 180%;
+        padding-top: 50%;
+        background-color: #695555;
+        z-index: 7;
+        transition: all 0.2s ease 0s;
+    }
+    .burger_main.active {
+        right: 0;
+    }
+    .burger_menu{
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger_logo{
+        margin: 25px 0 45px 0;
+    }
+    .burger_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar_item{
+        margin-bottom: 20px;
+    }
+    .log{
+      display: none;
+    }
+    #nav-container{
+      display: none;
+    }
+    .aboutTitle{
+      position: relative;
+      top: 12%;
+      font-size: 60%;
+    }
+    .dragon{
+      position: relative;
+      width: 60%;
+      top: -70%; 
+    }
+    .rotate{
+      position: fixed;
+      width: 60%;
+      top: 1%;
+      transform: rotate(-110deg);
+    }
+    .rotate2{
+      position: relative;
+      width: 80%;
+      top: -27%;
+    }
+    .btns{
+      position: relative;
+      width: 250%;
+      top: 1%;
+    }
+    .rocket1{
+      position: relative;
+      width: 50%;
+    }
+    .rocket2{
+      position: relative;
+      bottom: 20%;
+      width: 30%;
+      left: 50%;
+    }
+    .wrapper{
+      position: relative;
+      top: -15%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .parent{
+      top: -10%;
+      height: 160px;
+    }
+    .dragon2{
+      position: relative;
+      top: 1px;
+      width: 40%;
+    }
+    .rotate3{
+      position: relative;
+      top: 0%;
+      width: 70%;
+    }
+    .rotate4{
+      position: relative;
+      bottom: 50%;
+      width: 60%;
+    }
+    .aboutGames{
+      position: relative;
+      top: -35%;
+    }
+    .aboutG1, .aboutG2, .aboutG3{
+      font-size: 70%;
+      width: 80%;
+      padding: 3%;
+    }
+    .aboutG2{
+      position: relative;
+      left: 4%;
+    }
+    .infoPic{
+      width: 40%;
+      height: 25%;
+      border-radius: 20px;
+    }
+    .joinInfo{
+      font-size: 70%;
+    }
+    .inputFields{
+      position: relative;
+      width: 70%;
+      left: 13%;
+      border-radius: 30px;
+      padding: 4%;
+
+    }
+    .subscribe{
+      position: relative;
+      width: 70%;
+      padding: 2%;
+      border-radius: 30px;
+      left: 13%;
+      margin-top: 50%;
+    } 
+    .logo{
+      display: block;
+      position: relative;
+      width: 40%;
+      padding-top: 4%;
+      padding-bottom: 4%;
+      left: 32%;
+      margin: 0;
+      margin-bottom: 2%;
+    
+    }
+    .row{
+      font-size: 70%;
+    }
+    .btns2{
+      position: relative;
+      top: -22%;
+      left: -55%;
+      width: 100%;
+    }
+
+ 
+}
 
