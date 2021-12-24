@@ -1,0 +1,22 @@
+body{
+    background-image: url('3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}
+#chooseImage img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+.openD{
+    font-size: 600%;
+    text-align: center;
+    margin-top: 20%;
+    color: white;
+}
+.container{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 200%;
+}

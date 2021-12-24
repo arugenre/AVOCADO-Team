@@ -1,7 +1,8 @@
 body{
     color: white;
     background-image: url(imgs2/blob-scene-haikei.png);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover ;
     text-align:center ;
     font-family: 'Bubblegum Sans', cursive;
 }

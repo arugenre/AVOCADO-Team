@@ -26,9 +26,9 @@ $(document).ready(function(){
   
   });
 
-// function load(){
-//     $(".aboutTitle").animate({opacity: "1"},1000    );
-// }
+function load(){
+    $(".aboutTitle").animate({opacity: "1"},1000    );
+}
 
 function animated(){
     $("#dragon").animate({left: '+=100px'}, "slow");
@@ -57,13 +57,6 @@ $(".modal-button").click(function() {
     document.getElementsByClassName('header_burger')[0].classList.toggle('active');
     document.getElementsByClassName('burger_main')[0].classList.toggle('active');
 }
-
-// AOS.init({
-//     disable: function() {
-//       var maxWidth = 800;
-//       return window.innerWidth < maxWidth;
-//     }
-//   });
 
 //  $('body').css('overflow-x', 'initial');
 

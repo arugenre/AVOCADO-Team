@@ -218,7 +218,7 @@ function markincorrect() {
 }
 
 function animated(){
-	$("#dragonBoy").animate({left: '+=100px'}, "slow");
-    $("#dragonBoy").animate({left: '-=100px'}, "slow");
+	$("#lorel").animate({left: '+=100px'}, "slow");
+    $("#lorel").animate({left: '-=100px'}, "slow");	
 }
 setInterval(() => animated(),2000);

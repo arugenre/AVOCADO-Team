@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSulifa.css">
+    <script src = "sulifa.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>Make your move</p>
+        <p id = "movesLeft">Moves Left: 10 </p>
+        <div>
+            <table>
+                <tr>
+                    <th>user</th>
+                    <th>computer</th>
+                </tr>
+                <tr>
+                    <th id = "userPoint">0</th>
+                    <th id = "compPoint">0</th>
+                </tr>
+            </table>
+        </div>
+        <p id = "speak"> </p>
+        <div id = "chooseImage">
+            <img src="https://www.nicepng.com/png/detail/6-61708_rock-rock-paper-scissors-clipart.png" alt="rock.png" onclick="choice(1)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgfEvI5QqnPXFC3_pDL4sjDNUQhheHN_sZsStpAnIMcK3dWZqXEVfLjTsPiFJPZZ0LGo0&usqp=CAU" alt="scissors.png" onclick="choice(2)">
+            <img src="https://www.clipartkey.com/mpngs/m/109-1094319_rock-paper-scissors-png.png" alt="paper.png" onclick="choice(3)">
+        </div>
+        <button onclick="restart()">RESTART</button>
+        <button onclick="mainPage()">Main</button>
+    </div>
+</body>
+</html>
