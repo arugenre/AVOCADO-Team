@@ -1,3 +1,3 @@
 # AVOCADO-Team
 
-link to the project -[link]( https://arugenre.github.io/AVOCADO-Team/main.html)
+click [here](https://arugenre.github.io/AVOCADO-Team/main.html) to open the priject
